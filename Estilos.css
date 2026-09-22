@@ -1,0 +1,173 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #0a0a0a;
+    background: #f4f6f8;
+    line-height: 1.6;
+}
+
+header {
+    background: #19487a;
+    color: white;
+    padding: 20px;
+}
+
+nav h2 {
+    margin: 0 0 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 8px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+section {
+    padding: 30px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    background: white;
+}
+
+.hero h1 {
+    color: #12355b;
+}
+
+.boton,
+button {
+    display: inline-block;
+    background: #1769aa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover,
+.boton:focus,
+button:hover,
+button:focus {
+    background: #0b3d6e;
+    outline: 3px solid #f2c94c;
+}
+
+.agenda {
+    padding-left: 20px;
+}
+
+.ponentes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 3px solid #f2c94c;
+}
+
+footer {
+    background: #12355b;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    margin: 5px;
+}
+
+footer a:focus {
+    outline: 3px solid #f2c94c;
+}
+
+@media (min-width: 600px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav h2 {
+        margin: 0;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    .agenda {
+        columns: 2;
+    }
+
+    .ponentes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    .ponentes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+}
